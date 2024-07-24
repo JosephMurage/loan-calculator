@@ -22,22 +22,30 @@
                 width: 300px;
                 text-align: center;
             }
-            h1, h2 {
+            h1 {
                 margin-bottom: 20px;
+            }
+            h2 {
+                margin-bottom: 20px;
+                line-height: 1.5; /* Add space between lines */
+                word-wrap: break-word; /* Break long words */
             }
             form {
                 display: flex;
                 flex-direction: column;
+                align-items: center; /* Center form items horizontally */
             }
             label {
                 margin-bottom: 5px;
                 text-align: left;
+                width: 100%; /* Make labels occupy full width */
             }
             input {
                 margin-bottom: 15px;
                 padding: 10px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
+                width: 100%; /* Make inputs occupy full width */
             }
             button {
                 padding: 10px;
@@ -46,6 +54,7 @@
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
+                width: 100%; /* Make button occupy full width */
             }
             button:hover {
                 background-color: #45a049;
@@ -58,7 +67,7 @@
     <body>
         <div class="calculator">
             <h1>Loan Calculator</h1>
-            <h2>Calculate: monthly payment, total interest payable, and total payment</h2>
+            <h2>Calculate:<br> monthly payment,<br> total interest payable,<br> and total payment</h2>
             <form id="loan-form">
                 <label for="amount">Loan amount:</label>
                 <input type="number" id="amount" name="loan_amount" required>
